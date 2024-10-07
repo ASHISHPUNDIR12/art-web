@@ -1,0 +1,103 @@
+@use "../styles/assets" as *;
+
+.container {
+  display: flex;
+}
+
+.container--center {
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container--between {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container--col {
+  flex-direction: column;
+}
+
+.container--center-row {
+  justify-content: center;
+  align-items: center;
+}
+
+.gap--lg {
+  gap: 2rem;
+}
+
+.gap--md {
+  gap: 1rem;
+}
+
+.round-btn {
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid $light-black;
+  border-radius: 50%;
+  width: 1.5rem;
+  height: 1.5rem;
+  position: relative;
+  transition: 0.3s ease-in-out;
+
+  img {
+    object-fit: contain;
+    transition: 0.3s ease-in-out;
+  }
+}
+
+.round-btn:hover {
+  background: $offwhite;
+  transition: 0.3s ease-in-out;
+}
+.round-btn:hover img {
+  scale: 1.2;
+  transition: 0.3s ease-in-out;
+}
+
+.dark-para {
+  font-weight: 500;
+  color: $light-black;
+}
+
+.input--light {
+  padding: 0.5rem 5rem;
+}
+
+.button--dark {
+  padding: 0.5rem 2rem;
+  background: $black;
+  color: $white;
+  transition: 0.3s ease-in-out;
+  border: 1px solid $light-black;
+  text-align: center;
+}
+
+.button--dark:hover,
+.button--dark[click] {
+  background: $white;
+  color: $light-black;
+  border: 1px solid $light-black;
+  transition: 0.3s ease-in-out;
+}
+
+.active--link {
+  color: $light-black;
+  font-weight: 500;
+}
+
+.gap--sm {
+  gap: 0.3rem;
+}
+
+.icon {
+  max-width: 1.5rem;
+}
+
+.str-chat__reverse-infinite-scroll {
+  max-height: 40vh;
+}
